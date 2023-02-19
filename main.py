@@ -29,7 +29,8 @@ def find_mismatch(text):
 
 def main():
     text = input()
-    text = text[5:]
+    if text.startswith("I"):
+        text = input()
     mismatch = find_mismatch(text)
     print(mismatch)
   
